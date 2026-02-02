@@ -1,0 +1,4 @@
+.wrap{max-width:360px;margin:40px auto;display:grid;gap:10px}
+input,button{padding:10px}
+button{cursor:pointer}
+.err{color:#c00}
