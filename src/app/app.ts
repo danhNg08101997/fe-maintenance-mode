@@ -1,5 +1,5 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component, OnInit, signal} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {AuthService} from './core/auth/auth.service';
 
 @Component({
@@ -8,8 +8,7 @@ import {AuthService} from './core/auth/auth.service';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('fe-maintenance-app');
+export class App implements OnInit {
 
   constructor(private auth: AuthService) {}
 
